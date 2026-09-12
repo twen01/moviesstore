@@ -48,10 +48,10 @@
             </a>
             <a class="btn btn-danger" href="{% url 'movies.delete_review' id=template_data.movie.id review_id=review.id %}">Delete
             </a>
+            {% endif %}
             </a>
             <a class="btn btn-danger" href="{% url 'movies.delete_review' id=template_data.movie.id review_id=review.id %}">Report Inappropriate
             </a>
-            {% endif %}
           </li>
           {% endfor %}
         </ul>
